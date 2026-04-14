@@ -225,7 +225,6 @@ mypoc_ecommerce/
     <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
   </div>
 
-
   <div id="guide" style="margin-bottom: 60px; padding-top: 10px;">
     <h2 style="color: #39ff14; margin-top: 0; text-shadow: 0 0 8px rgba(57,255,20,0.6);">> AI Analyst Guide</h2>
     
@@ -266,7 +265,131 @@ mypoc_ecommerce/
     
     <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
   </div>
+  
+  <div id="schema" style="margin-bottom: 60px; padding-top: 10px;">
+    <h2 style="color: #39ff14; margin-top: 0; text-shadow: 0 0 8px rgba(57,255,20,0.6);">> Schema</h2>
+    
+    <p style="font-size: 16px; line-height: 1.6; color: #d3d3d3;">
+      Schema reused from Microsoft's OG NorthWind Database (just few tables used) only AI_insights is the 
+      new table
+    </p>
+    <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
+      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
+CREATE TABLE orders (
+    order_id smallint NOT NULL PRIMARY KEY,
+    customer_id bpchar,
+    employee_id smallint,
+    order_date date,
+    required_date date,
+    shipped_date date,
+    ship_via smallint,
+    freight real,
+    ship_name character varying(40),
+    ship_address character varying(60),
+    ship_city character varying(15),
+    ship_region character varying(15),
+    ship_postal_code character varying(10),
+    ship_country character varying(15),
+    FOREIGN KEY (customer_id) REFERENCES customers,
+    FOREIGN KEY (employee_id) REFERENCES employees,
+    FOREIGN KEY (ship_via) REFERENCES shippers
+);
 
+CREATE TABLE order_details (
+    order_id smallint NOT NULL,
+    product_id smallint NOT NULL,
+    unit_price real NOT NULL,
+    quantity smallint NOT NULL,
+    discount real NOT NULL,
+    PRIMARY KEY (order_id, product_id),
+    FOREIGN KEY (product_id) REFERENCES products,
+    FOREIGN KEY (order_id) REFERENCES orders
+);
+
+CREATE TABLE employees (
+    employee_id smallint NOT NULL PRIMARY KEY,
+    last_name character varying(20) NOT NULL,
+    first_name character varying(10) NOT NULL,
+    title character varying(30),
+    title_of_courtesy character varying(25),
+    birth_date date,
+    hire_date date,
+    address character varying(60),
+    city character varying(15),
+    region character varying(15),
+    postal_code character varying(10),
+    country character varying(15),
+    home_phone character varying(24),
+    extension character varying(4),
+    photo bytea,
+    notes text,
+    reports_to smallint,
+    photo_path character varying(255),
+	FOREIGN KEY (reports_to) REFERENCES employees
+);
+
+CREATE TABLE categories (
+    category_id smallint NOT NULL PRIMARY KEY,
+    category_name character varying(15) NOT NULL,
+    description text,
+    picture bytea
+);
+
+CREATE TABLE suppliers (
+    supplier_id smallint NOT NULL PRIMARY KEY,
+    company_name character varying(40) NOT NULL,
+    contact_name character varying(30),
+    contact_title character varying(30),
+    address character varying(60),
+    city character varying(15),
+    region character varying(15),
+    postal_code character varying(10),
+    country character varying(15),
+    phone character varying(24),
+    fax character varying(24),
+    homepage text
+);
+
+CREATE TABLE products (
+    product_id smallint NOT NULL PRIMARY KEY,
+    product_name character varying(40) NOT NULL,
+    supplier_id smallint,
+    category_id smallint,
+    quantity_per_unit character varying(20),
+    unit_price real,
+    units_in_stock smallint,
+    units_on_order smallint,
+    reorder_level smallint,
+    discontinued integer NOT NULL,
+	FOREIGN KEY (category_id) REFERENCES categories,
+	FOREIGN KEY (supplier_id) REFERENCES suppliers
+);
+
+CREATE TABLE customers (
+    customer_id bpchar NOT NULL PRIMARY KEY,
+    company_name character varying(40) NOT NULL,
+    contact_name character varying(30),
+    contact_title character varying(30),
+    address character varying(60),
+    city character varying(15),
+    region character varying(15),
+    postal_code character varying(10),
+    country character varying(15),
+    phone character varying(24),
+    fax character varying(24)
+);
+
+CREATE TABLE shippers (
+    shipper_id smallint NOT NULL PRIMARY KEY,
+    company_name character varying(40) NOT NULL,
+    phone character varying(24)
+);
+      </pre>
+    </div>
+    
+    <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
+  </div>
+  
   <div id="scenario" style="margin-bottom: 60px; padding-top: 10px;">
     <h2 style="color: #39ff14; margin-top: 0; text-shadow: 0 0 8px rgba(57,255,20,0.6);">> Scenario</h2>
     
