@@ -35,7 +35,7 @@
     </p>
 
     <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
-      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #39ff14; line-height: 1.2;">
+      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
 ┌─────────────────────────────────────────────────────────┐
 │                  podman ecomm_watcher                   │
 │                                                         │
@@ -74,7 +74,7 @@
     </ul-->
 
     <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
-      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #39ff14; line-height: 1.2;">
+      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
 ┌─────────────────────────────────────────────────────────────────────┐
 │                    RUNNING INSIDE ONE PODMAN CONTAINER              │
 ├─────────────────────────────────────────────────────────────────────┤
@@ -167,7 +167,7 @@ Frontend: Vite + React TSX
       Code is in github still in progress of refactoring and adding other features.
     </p>
     <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
-      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #39ff14; line-height: 1.2;">
+      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
 
 mypoc_ecommerce/
 ├── schema.sql                        # MariaDB schema + seed data
@@ -213,7 +213,7 @@ mypoc_ecommerce/
       -->
     </p>
     <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
-      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #39ff14; line-height: 1.2;">
+      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
   http://localhost:8000/getCustomer/customer_id/all
   
   http://localhost:8000/getEmployee/employee_id/all
@@ -235,7 +235,7 @@ mypoc_ecommerce/
       -->
     </p>
     <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
-      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #39ff14; line-height: 1.2;">
+      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
 ┌─────────────────────────────────────────────────────────────────────┐
 │              USER / MARKETING ASSOCIATE MENTAL MODEL                │
 ├─────────────────────────────────────────────────────────────────────┤
