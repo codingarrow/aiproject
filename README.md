@@ -225,6 +225,48 @@ mypoc_ecommerce/
     <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
   </div>
 
+
+  <div id="guide" style="margin-bottom: 60px; padding-top: 10px;">
+    <h2 style="color: #39ff14; margin-top: 0; text-shadow: 0 0 8px rgba(57,255,20,0.6);">> AI Analyst Guide</h2>
+    
+    <p style="font-size: 16px; line-height: 1.6; color: #d3d3d3;">
+      <!--
+      Final section. Because this entire container uses <code>box-sizing: border-box</code> and <code>max-width: 100%</code>, it will perfectly scale down to mobile screens while keeping your horizontal menu wrapped and clean.
+      -->
+    </p>
+    <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
+      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #39ff14; line-height: 1.2;">
+┌─────────────────────────────────────────────────────────────────────┐
+│              USER / MARKETING ASSOCIATE MENTAL MODEL                │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  Think of it like a very smart analyst sitting next to you         │
+│                                                                     │
+│  The dashboard charts and tables = free reports                    │
+│  already prepared — like a printed report on your desk             │
+│                                                                     │
+│  The AI Analyst tab = asking that smart analyst                    │
+│  a specific question about those reports                           │
+│  First time you ask = analyst thinks and answers = small cost      │
+│  Same question again = analyst remembers = no cost                 │
+│                                                                     │
+│  Load Archive = reading the analyst's notebook                     │
+│  of all previous questions and answers = free                      │
+│                                                                     │
+│  Best practice:                                                     │
+│  Ask your most important questions once                            │
+│  Save the answers in the archive                                   │
+│  Share archive answers with the team                               │
+│  Only ask NEW questions when you need new insight                  │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+  
+      </pre>
+    </div>
+    
+    <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
+  </div>
+
   
 
 </div>
