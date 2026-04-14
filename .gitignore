@@ -1,0 +1,10 @@
+.env
+*.json
+!frontend/package.json
+!frontend/tsconfig.json
+__pycache__/
+*.pyc
+gcp_service_account.json
+logs/
+frontend/node_modules/
+frontend/dist/
