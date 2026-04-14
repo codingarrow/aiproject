@@ -3,25 +3,25 @@
   <nav style="border-bottom: 1px dashed #39ff14; padding-bottom: 20px; margin-bottom: 40px;">
     <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
       <li>
-        <a href="#overview" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);">[ Overview ]</a>
+        <a href="#overview" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);"> [ Overview ]</a>
       </li>
       <li>
-        <a href="#architecture" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);">[ Architecture ]</a>
+        <a href="#architecture" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);"> [ Architecture ]</a>
       </li>
       <li>
-        <a href="#setup" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);">[ Setup Guide ]</a>
+        <a href="#setup" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);"> [ Setup Guide ]</a>
       </li>
       <li>
         <a href="#api" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);">[ API  Reference ]</a>
       </li>      
       <li>
-        <a href="#guide" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);">[ AI Analyst Guide ]</a>
+        <a href="#guide" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);"> [ AI Analyst Guide ]</a>
       </li>
       <li>
-        <a href="#schema" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);">[Schema]</a>
+        <a href="#schema" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);"> [Schema]</a>
       </li>
       <li>
-        <a href="#scenario" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);">[Scenario]</a>
+        <a href="#scenario" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);"> [Scenario]</a>
       </li>
       
     </ul>
