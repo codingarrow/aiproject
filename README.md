@@ -173,11 +173,9 @@ Frontend: Vite + React TSX
     <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
       <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
 
-mypoc_ecommerce/
+[yourFolder]/
 ├── schema.sql                        # MariaDB schema + seed data
 ├── requirements.txt                  # Python dependencies
-├── .env                              # Environment variables
-├── Dockerfile                        # Container build
 ├── start.sh                          # Starts FastAPI + watcher together
 ├── rebuild.sh                        # Podman build + run script
 ├── backend/
