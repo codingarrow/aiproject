@@ -267,6 +267,189 @@ mypoc_ecommerce/
     <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
   </div>
 
+  <div id="scenario" style="margin-bottom: 60px; padding-top: 10px;">
+    <h2 style="color: #39ff14; margin-top: 0; text-shadow: 0 0 8px rgba(57,255,20,0.6);">> Scenario</h2>
+    
+    <p style="font-size: 16px; line-height: 1.6; color: #d3d3d3;">
+      <!--
+      Final section. Because this entire container uses <code>box-sizing: border-box</code> and <code>max-width: 100%</code>, it will perfectly scale down to mobile screens while keeping your horizontal menu wrapped and clean.
+      -->
+      Where Claude is capable of ... sales related question
+    </p>
+    <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
+      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
+
+┌─────────────────────────────────────────────────────────────────────┐
+│                    RECOMMENDED PRESET QUESTIONS                     │
+│                    FOR MARKETING ASSOCIATE                          │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  CUSTOMER INTELLIGENCE:                                             │
+│  • "Who are our top 10 customers by total revenue?"                │
+│  • "Which customers have not ordered in the last 90 days?"         │
+│  • "Which country generates the most revenue?"                     │
+│  • "Which customers qualify for loyalty rewards?"                  │
+│                                                                     │
+│  PRODUCT PERFORMANCE:                                               │
+│  • "Which products are selling the fastest this quarter?"          │
+│  • "Which products have the highest profit margin?"                │
+│  • "What products are frequently ordered together?"                │
+│  • "Which products are at risk of stockout?"                       │
+│                                                                     │
+│  SALES TEAM PERFORMANCE:                                            │
+│  • "Which employee closed the most revenue this month?"            │
+│  • "Which sales rep has the most repeat customers?"                │
+│  • "Which employee handles the largest average order value?"       │
+│                                                                     │
+│  OPERATIONAL:                                                       │
+│  • "Which shipper has the best on-time delivery rate?"             │
+│  • "What is the average time between order and shipment?"          │
+│  • "Which orders are overdue for shipping?"                        │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────┐
+│                    DETERMINISTIC vs INTERPRETIVE                    │
+├──────────────────────────────┬──────────────────────────────────────┤
+│  DETERMINISTIC               │  INTERPRETIVE                        │
+│  SQL answers perfectly       │  Claude adds real value              │
+├──────────────────────────────┼──────────────────────────────────────┤
+│  Who spent the most?         │  Why might Christina spend more?     │
+│  Which country orders most?  │  What risk does UK market pose?      │
+│  How many orders this month? │  What pattern explains low spend?    │
+│  What is average order size? │  What should we do about Elizabeth?  │
+└──────────────────────────────┴──────────────────────────────────────┘
+  
+  
+      </pre>
+    </div>
+
+    <p style="font-size: 16px; line-height: 1.6; color: #d3d3d3;">
+      VERDICT:
+────────
+Asking Claude pure deterministic questions = mild overkill
+SQL already answered it — Claude just repeats it with words
+Small cost for low additional value
+
+BEST PRACTICE:
+──────────────
+Never ask Claude WHAT the data says
+Always ask Claude WHAT TO DO about what the data says
+
+❌ WEAK:  "Which customer spent the most?"
+          SQL already shows this — Claude adds nothing new
+
+✅ STRONG: "Christina Berglund is our top spender at $6,560.86
+            What retention strategy should we prioritize for her
+            given she is in Sweden and orders frequently?"
+            Claude now adds strategy SQL cannot compute
+    </p>
+
+      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
+
+
+┌─────────────────────────────────────────────────────────────────────┐
+│  Elizabeth Brown — UK — $740.29 total spent                        │
+│  "What would entice Elizabeth to order more?"                      │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  THIS IS THE CORRECT USE OF AI — not deterministic at all          │
+│  SQL cannot answer this — Claude can reason about it               │
+│                                                                     │
+│  WHAT CLAUDE WOULD REASON:                                          │
+│  • Low spend could mean: new customer, price sensitive,            │
+│    infrequent need, bad experience, competitor preference          │
+│  • SQL context shows: order frequency, product categories,         │
+│    last order date, average order value                            │
+│  • Claude connects these to recommend specific action              │
+│                                                                     │
+│  MARKETING STRESS CONCERN — YOUR INSTINCT IS CORRECT:             │
+│                                                                     │
+│  ┌─────────────────────────────────────────────────────────┐       │
+│  │  WRONG APPROACH          │  RIGHT APPROACH              │       │
+│  ├──────────────────────────┼──────────────────────────────┤       │
+│  │  Blast email to          │  One personalized touch      │       │
+│  │  Elizabeth weekly        │  based on her order history  │       │
+│  │  "We miss you!"          │                              │       │
+│  │  Generic discount code   │  Specific product she        │       │
+│  │  Tedious survey          │  ordered before — restocked  │       │
+│  │  Reminder after reminder │  or improved version         │       │
+│  │  = Elizabeth unsubscribes│  = Elizabeth feels seen      │       │
+│  └──────────────────────────┴──────────────────────────────┘       │
+│                                                                     │
+│  BEST CLAUDE QUESTION FOR ELIZABETH:                               │
+│  "Elizabeth Brown from UK has spent only $740.29 total             │
+│   across 2 orders. Her last order was [date]. She ordered          │
+│   [products]. What is one specific non-intrusive action            │
+│   we can take to increase her engagement without                   │
+│   overwhelming her with communications?"                           │
+│                                                                     │
+│  Claude will reason:                                                │
+│  • One targeted email — not a campaign                             │
+│  • Reference her specific past purchase                            │
+│  • Offer relevant product — not generic discount                   │
+│  • Respect her low-frequency buying pattern                        │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│                    STRONG CLAUDE QUESTIONS                          │
+│                    FOR CROSS-MARKET INSIGHT                         │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  QUESTION 1 — Discovery:                                            │
+│  "Which non-Asian customers are ordering products                  │
+│   sourced from Asian suppliers and what does this                  │
+│   pattern suggest about their preferences?"                        │
+│                                                                     │
+│  Claude will reason:                                                │
+│  • Health food trend (tofu, green tea) in Western markets          │
+│  • Specialty cuisine interest                                       │
+│  • Premium product seeking behavior                                │
+│  • Recommend: expand Asian supplier catalog for Western buyers     │
+│                                                                     │
+│  QUESTION 2 — Logistics Reality Check:                             │
+│  "A UK customer is ordering Japanese-sourced products.             │
+│   Given shipping costs from Asia to UK what local                  │
+│   alternatives or bundling strategies would maintain               │
+│   margin while keeping the customer engaged?"                      │
+│                                                                     │
+│  Claude will reason:                                                │
+│  • European distributors carrying same Asian brands               │
+│  • Bundle Asian products to justify shipping cost                  │
+│  • Minimum order threshold for free shipping                       │
+│  • Local substitute products with similar profile                  │
+│                                                                     │
+│  QUESTION 3 — Opportunity Sizing:                                  │
+│  "Which Western European customers show the strongest              │
+│   affinity for Asian-sourced products and what is                  │
+│   their combined revenue potential if we doubled                   │
+│   our Asian product catalog?"                                      │
+│                                                                     │
+│  Claude will reason:                                                │
+│  • Identify highest-spend Western buyers of Asian goods            │
+│  • Project revenue based on current spend patterns                 │
+│  • Recommend catalog expansion priority by country                 │
+│                                                                     │
+│  QUESTION 4 — Practical Alternative:                               │
+│  "For UK customers buying Japanese products what                   │
+│   European-sourced alternatives exist in our catalog               │
+│   that match the same product category?"                           │
+│                                                                     │
+│  Claude will reason:                                                │
+│  • Map Japanese products to European equivalents                   │
+│  • Suggest cross-sell opportunities                                │
+│  • Reduce shipping cost while retaining customer                   │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+      
+      </pre>
+    </div>
+    
+    
+    <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
+  </div>
   
 
 </div>
