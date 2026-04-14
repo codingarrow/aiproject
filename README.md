@@ -1,4 +1,3 @@
-
 <div style="background-color: #121212; color: #e0e0e0; padding: 24px; border-radius: 12px; border: 1px solid #333; margin: 20px 0; max-width: 100%; box-sizing: border-box; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
   
   <h2 style="color: #ffffff; margin-top: 0; font-family: sans-serif;">Server Architecture</h2>
@@ -35,6 +34,3 @@
   </div>
 
 </div>
-
-
-   
