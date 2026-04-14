@@ -12,7 +12,7 @@
         <a href="#setup" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);"> [ Setup Guide ]</a>
       </li>
       <li>
-        <a href="#api" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);">[ API  Reference ]</a>
+        <a href="#apireference" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);">[ API  Reference ]</a>
       </li>      
       <li>
         <a href="#guide" style="color: #39ff14; text-decoration: none; font-size: 18px; font-weight: bold; text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);"> [ AI Analyst Guide ]</a>
@@ -204,22 +204,22 @@ mypoc_ecommerce/
     <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
   </div>
 
-  <div id="api" style="margin-bottom: 60px; padding-top: 10px;">
+  <div id="apireference" style="margin-bottom: 60px; padding-top: 10px;">
     <h2 style="color: #39ff14; margin-top: 0; text-shadow: 0 0 8px rgba(57,255,20,0.6);">> API  Reference</h2>
     
     <p style="font-size: 16px; line-height: 1.6; color: #d3d3d3;">
-      AI powered by Claude (Anthropic) — Backend: FastAPI + MariaDB — Frontend: Vite + React TSX.
+      <!--
+      Final section. Because this entire container uses <code>box-sizing: border-box</code> and <code>max-width: 100%</code>, it will perfectly scale down to mobile screens while keeping your horizontal menu wrapped and clean.
+      -->
     </p>
-
     <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
       <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #39ff14; line-height: 1.2;">
-        http://localhost:8000/getCustomer/customer_id/all
-        
-        http://localhost:8000/getEmployee/employee_id/all
-        
-        http://localhost:8000/getDashboard/summary)   
+  http://localhost:8000/getCustomer/customer_id/all
+  
+  http://localhost:8000/getEmployee/employee_id/all
+  
+  http://localhost:8000/getDashboard/summary)   
       </pre>
-      
     </div>
     
     <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
