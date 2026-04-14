@@ -1,3 +1,20 @@
+
+<div style="background-color: #121212; color: #e0e0e0; padding: 40px; border-radius: 12px; border: 1px solid #333; margin: 20px 0;">
+  
+  <h2 style="color: #ffffff; margin-top: 0;">Server Architecture</h2>
+  
+  <p style="font-size: 16px; line-height: 1.6;">
+    This is a dedicated dark-themed section. Because you are using inline CSS, this block will strictly remain dark and retain its styling regardless of what GitHub Pages theme you use in the background.
+  </p>
+
+  <ul style="list-style-type: square; margin-left: 20px;">
+    <li>Independent contrast control</li>
+    <li>Bypasses Jekyll theme overrides</li>
+    <li>Perfect for developer portfolios</li>
+  </ul>
+
+</div>
+
 # aiproject
 
 ┌─────────────────────────────────────────────────────────┐
