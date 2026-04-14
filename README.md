@@ -320,14 +320,9 @@ mypoc_ecommerce/
 │  How many orders this month? │  What pattern explains low spend?    │
 │  What is average order size? │  What should we do about Elizabeth?  │
 └──────────────────────────────┴──────────────────────────────────────┘
-  
-  
-      </pre>
-    </div>
-
-    <p style="font-size: 16px; line-height: 1.6; color: #d3d3d3;">
+    
       VERDICT:
-────────
+──────────────
 Asking Claude pure deterministic questions = mild overkill
 SQL already answered it — Claude just repeats it with words
 Small cost for low additional value
@@ -344,10 +339,6 @@ Always ask Claude WHAT TO DO about what the data says
             What retention strategy should we prioritize for her
             given she is in Sweden and orders frequently?"
             Claude now adds strategy SQL cannot compute
-    </p>
-
-      <pre style="margin: 0; font-family: 'Courier New', Consolas, monospace; font-size: 14px; color: #f4f1de; line-height: 1.2;">
-
 
 ┌─────────────────────────────────────────────────────────────────────┐
 │  Elizabeth Brown — UK — $740.29 total spent                        │
@@ -442,14 +433,10 @@ Always ask Claude WHAT TO DO about what the data says
 │  • Suggest cross-sell opportunities                                │
 │  • Reduce shipping cost while retaining customer                   │
 │                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
-      
+└─────────────────────────────────────────────────────────────────────┘      
       </pre>
-    </div>
-    
-    
+    </div>    
     <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
   </div>
   
-
 </div>
