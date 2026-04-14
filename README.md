@@ -54,7 +54,14 @@
    host mount only               host mount only
       </pre>
     </div>
-    
+
+<div style="text-align: center; margin: 30px 0;">
+      <img src="https://i.postimg.cc/k4jW15hw/loadarchive.png" alt="Placeholder" style="border: none; max-width: 100%; height: auto; border-radius: 8px;">
+
+      <img src="https://i.postimg.cc/k4jW15hy/dashboard.png" alt="Placeholder" style="border: none; max-width: 100%; height: auto; border-radius: 8px;">
+	
+    </div>
+	
     <a href="#top" style="color: #39ff14; text-decoration: none; font-size: 14px;">↑ Return to Top</a>
   </div>
 
