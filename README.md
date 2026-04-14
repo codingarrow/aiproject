@@ -274,7 +274,7 @@ mypoc_ecommerce/
     <h2 style="color: #39ff14; margin-top: 0; text-shadow: 0 0 8px rgba(57,255,20,0.6);">> Schema</h2>
     
     <p style="font-size: 16px; line-height: 1.6; color: #d3d3d3;">
-      Schema reused from Microsoft's OG NorthWind Database (just few tables used) only AI_insights is the 
+      Schema reused from Microsoft's OG NorthWind Database (just few tables used) only ai_insights is the 
       new table
     </p>
     <div style="background-color: #000000; padding: 16px; border-radius: 4px; border: 1px solid #1f6b11; overflow-x: auto; margin: 20px 0;">
